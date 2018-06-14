@@ -1,0 +1,103 @@
+:root{
+    counter-reset: item;
+    --button-color: rgba(25, 208, 15, 0.74);
+    %grid {
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 1044px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 1599px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+
+@-webkit-keyframes run {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+body {
+  background-color: rgba(250, 250, 250, 0.70);
+}
+
+nav{
+    margin-bottom: 2rem;
+}
+
+
+.movies {
+    display: grid;
+    @extend %grid;
+    grid-gap: 1rem;
+    
+    &__item {
+        animation-fill-mode: forwards;
+        background-color: white;
+        animation-name: run;
+        animation-duration: 1s;
+        border-radius: .5rem;
+        border: 1px solid #ccc;
+        &__poster {
+            width: 100%;
+        }
+        &__title {
+            font-family: arial;
+            margin: 1rem;
+        }
+        &__storyline {
+            margin: 1rem 1rem 1rem;
+        }
+        &__button{
+            margin: 1rem;
+        }
+    }
+}
+
+#trailer .modal-dialog {
+    margin-top: 200px;
+    width: 640px;
+    height: 480px;
+}
+
+.hanging-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: 9001;
+}
+
+#trailer-video {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-tile {
+    margin-bottom: 20px;
+    //padding-top: 20px;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+
+.scale-media {
+    padding-bottom: 56.25%;
+    position: relative;
+    iframe {
+        border: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: white;
+    }
+}
