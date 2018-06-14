@@ -53,20 +53,3 @@ class Movie:
 
         except (ValueError, KeyError, TypeError):
             print("Genre JSON format error")
-
-    
-def all_genre_names(): #return all genres in the API
-    # connect to API and get the response
-    data_genres = connect.Connect("GET", "/3/genre/movie/list?language=en-US&api_key=")
-    try:
-        decoded = json.loads(data_genres.data)
-        genres_api = decoded['genres']
-        all_genres = []
-        for genre_api in genres_api:
-            name = str(genre_api['name'])
-            all_genres.append(name)
-        
-        return all_genres
-
-    except (ValueError, KeyError, TypeError):
-        print("Genre JSON format error")

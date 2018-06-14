@@ -5,7 +5,8 @@
   "main": "js/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "surge": "surge dist/ my-movies-udacity.surge.sh"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -40,6 +41,7 @@
   "homepage": "https://github.com/denisprado/ud036_StarterCode#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "hoek": "^5.0.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "postcss": "^6.0.22"

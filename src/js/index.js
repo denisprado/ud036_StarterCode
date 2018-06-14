@@ -10,13 +10,15 @@ $(function() {
   $(".nav-link").click(function() {
     //use a class, since your ID gets mangled
     $(this).addClass("active"); //add the class to the clicked element
-    var classe = $(this).attr('class').replace("nav-link","").replace("active","").replace(/ /g,"")
-    $("#showing").html("<h4>Showing " + classe + " movies</h4>");
-    if (classe=="All") {
+    var genreClass = $(this).attr('class').replace("nav-link","").replace("active","").replace(/ /g,"")
+    var genreName = $(this).attr('class').replace("nav-link","").replace("active","")
+    
+    $("#showing").html("<h4>Showing " + genreName + " movies</h4>");
+    if (genreClass=="All") {
       $(".movies__item").show();  
     } else{
       $('.movies__item').hide()
-      $('.'+classe).show()
+      $('.'+genreClass).show()
     }
   });
 });

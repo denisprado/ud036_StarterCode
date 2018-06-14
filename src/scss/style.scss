@@ -2,13 +2,15 @@
     counter-reset: item;
     --button-color: rgba(25, 208, 15, 0.74);
     %grid {
+        grid-template-columns: repeat(1, 1fr);
+
         @media (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
         @media (min-width: 1044px) {
             grid-template-columns: repeat(4, 1fr);
         }
-        @media (max-width: 1599px) {
+        @media (min-width: 1599px) {
             grid-template-columns: repeat(4, 1fr);
         }
     }
@@ -26,6 +28,7 @@
 
 body {
   background-color: rgba(250, 250, 250, 0.70);
+  cursor: pointer;
 }
 
 nav{

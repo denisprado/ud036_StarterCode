@@ -2,8 +2,9 @@ import my_movies
 import media
 import connect
 import json
+from itertools import chain
 
-data_movies = connect.Connect("GET", "/3/discover/movie?page=1&include_video=true&include_adult=false&language=en-US&sort_by=popularity.desc&api_key=")
+data_movies = connect.Connect("GET", "/3/movie/top_rated?page=1&language=en-US&api_key=")
 # Using python tutorial from https://pythonspot.com/json-encoding-and-decoding-with-python/
 
 try:
@@ -33,18 +34,19 @@ all_genres_presents = []
 for movie in movies: 
     movie_id = str(movie.id)
     movie.get_trailer_url(movie_id)
+    print(movie.genres)
     movie.get_genre_names(movie.genres)
-
+    print(movie.title, movie.genres)
     all_genres_presents.append(movie.genres)
 
-def all(list2d):
-        return(','.join(str(item) for innerlist in list2d for item in innerlist))
-        print(','.join(str(item)
-                       for innerlist in list2d for item in innerlist))
- # Using this solution: https://stackoverflow.com/questions/103844/how-do-i-merge-a-2d-array-in-python-into-one-string-with-list-comprehension
+#return unique genre names present in the retrieved movies
+def flatten(listOfLists):
+    return set(chain.from_iterable(listOfLists))
 
-my_movies.open_movies_page(movies)
+all_genres_presents_uniques = flatten(all_genres_presents)
 
+
+my_movies.open_movies_page(movies, all_genres_presents_uniques)
 
 """'vote_count',
 'id',

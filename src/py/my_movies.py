@@ -51,8 +51,8 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
+        <h4 id="showing" role="alert" class="All alert alert-secondary">Showing All Movies</h4>
         <div class="movies">
-            <h4 id="showing" role="alert" class="All alert alert-secondary">Showing All Movies</h4>
             {movie_tiles}
         </div>
     </div>
@@ -79,12 +79,12 @@ menu_content='''
 '''
 
 def create_item_menu(item):
-    item = '<li class="nav-item"><a class="nav-link ' + item +'">' + item + '</a></li>'
+    item = '<li class="nav-item"><a class="nav-link ' + item.replace(" ","") +'">' + item + '</a></li>'
     return str(item)
 
-def create_menu_content(movies):
+def create_menu_content(genres):
     menu = []
-    menu_list = media.all_genre_names()
+    menu_list = genres
     
     menu = menu_content.format(
         menu_items=' '.join(map(create_item_menu, menu_list))
@@ -111,12 +111,12 @@ def create_movie_tiles_content(movies):
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
             movie_storyline=movie.storyline.encode('utf-8').strip(),
-            movie_genres='<span class="badge badge-secondary">'+'</span> <span class="badge badge-secondary">'.join(map(str, movie.genres))+'</span>',
-            movie_classes= ' '.join(map(str, movie.genres))
+            movie_genres='<span class="badge badge-light">'+'</span> <span class="badge badge-light">'.join(map(str, movie.genres))+'</span>',
+            movie_classes= ' '.join(map(str, map(lambda foo: foo.replace(' ', ''), movie.genres)))
         )
     return content
 
-def open_movies_page(movies):
+def open_movies_page(movies, genres):
     # Create or overwrite the output file
     output_file = open('my_movies.html', 'w')
 
@@ -124,7 +124,7 @@ def open_movies_page(movies):
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
         movie_tiles=create_movie_tiles_content(movies),
-        menu_genres=create_menu_content(movies)
+        menu_genres=create_menu_content(genres)
     )
 
     # Output the file
