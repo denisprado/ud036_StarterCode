@@ -13,7 +13,8 @@ $(function() {
     var genreClass = $(this).attr('class').replace("nav-link","").replace("active","").replace(/ /g,"")
     var genreName = $(this).attr('class').replace("nav-link","").replace("active","")
     
-    $("#showing").html("<h4>Showing " + genreName + " movies</h4>");
+    // showing the genre movies listed
+    $("#showing").html("<span role='alert'>Showing <span class='text-primary'>" + genreName + "</span> movies</span>");
     if (genreClass=="All") {
       $(".movies__item").show();  
     } else{

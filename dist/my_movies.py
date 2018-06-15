@@ -12,6 +12,7 @@ main_page_head = '''
 <head>
     <meta charset="utf-8">
     <title>My Favorite Movies</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src="./index.js"></script>
 </head>
 '''
@@ -51,12 +52,21 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-        <h4 id="showing" role="alert" class="All alert alert-secondary">Showing All Movies</h4>
+    
+        <div class="alert alert-secondary">           
+            <span id="showing" class="All">Showing All Movies</span>
+        </div>
         <div class="movies">
             {movie_tiles}
         </div>
     </div>
-
+    <footer class="p-4 bg-light">
+        <div class="row p-4">
+            <div class="col text-center p-4">
+                Using <img src="https://www.themoviedb.org/static_cache/v4/logos/408x161-powered-by-rectangle-blue-10d3d41d2a0af9ebcb85f7fb62ffb6671c15ae8ea9bc82a2c6941f223143409e.png" width="77" height="30"> API
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
 '''
@@ -111,8 +121,8 @@ def create_movie_tiles_content(movies):
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
             movie_storyline=movie.storyline.encode('utf-8').strip(),
-            movie_genres='<span class="badge badge-light">'+'</span> <span class="badge badge-light">'.join(map(str, movie.genres))+'</span>',
-            movie_classes= ' '.join(map(str, map(lambda foo: foo.replace(' ', ''), movie.genres)))
+            movie_genres='<span class="badge badge-light">'+'</span> <span class="badge badge-light">'.join(map(str, movie.genres_names))+'</span>',
+            movie_classes= ' '.join(map(str, map(lambda foo: foo.replace(' ', ''), movie.genres_names)))
         )
     return content
 

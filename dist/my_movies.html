@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>My Favorite Movies</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src="./index.js"></script>
 </head>
 
@@ -42,7 +43,10 @@
 
     <!-- Main Page Content -->
     <div class="container">
-        <h4 id="showing" role="alert" class="All alert alert-secondary">Showing All Movies</h4>
+    
+        <div class="alert alert-secondary">           
+            <span id="showing" class="All">Showing All Movies</span>
+        </div>
         <div class="movies">
             
 <div class="movies__item movie-tile Comedy Drama Romance" data-trailer-youtube-id="c25GKl5VNeY" data-toggle="modal" data-target="#trailer">
@@ -99,6 +103,15 @@
     <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
 </div>
 
+<div class="movies__item movie-tile Drama ScienceFiction Animation" data-trailer-youtube-id="-d2th2c8NhU" data-toggle="modal" data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//5JYzfyKBwReaQ41WFhqXgOZnPWV.jpg">
+    
+    <h3 class="movies__item__title">Neon Genesis Evangelion: The End of Evangelion</h3>
+    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Science Fiction</span> <span class="badge badge-light">Animation</span></h6>
+    <p class="movies__item__storyline">The second of two theatrically released follow-ups to the Neon Genesis Evangelion series. Comprising of two alternate episodes which were first intended to take the place of episodes 25 and 26, this finale answers many of the questions surrounding the series, while also opening up some new possibilities</p>
+    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+</div>
+
 <div class="movies__item movie-tile Drama Crime" data-trailer-youtube-id="9O1Iy9od7-A" data-toggle="modal" data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//bVq65huQ8vHDd1a4Z37QtuyEvpA.jpg">
     
@@ -114,6 +127,24 @@
     <h3 class="movies__item__title">Schindler's List</h3>
     <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">History</span> <span class="badge badge-light">War</span></h6>
     <p class="movies__item__storyline">The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.</p>
+    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+</div>
+
+<div class="movies__item movie-tile Action Drama History" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//5konZnIbcAxZjP616Cz5o9bKEfW.jpg">
+    
+    <h3 class="movies__item__title">Harakiri</h3>
+    <h6 class="movies__item__button"><span class="badge badge-light">Action</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">History</span></h6>
+    <p class="movies__item__storyline">Peace in 17th-century Japan causes the Shogunate's breakup of warrior clans, throwing thousands of samurai out of work and into poverty. An honorable end to such fate under the samurai code is ritual suicide, or hara-kiri.</p>
+    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+</div>
+
+<div class="movies__item movie-tile Fantasy Drama Crime" data-trailer-youtube-id="ctRK-4Vt7dA" data-toggle="modal" data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//3yJUlOtVa09CYJocwBU8eAryja0.jpg">
+    
+    <h3 class="movies__item__title">The Green Mile</h3>
+    <h6 class="movies__item__button"><span class="badge badge-light">Fantasy</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
+    <p class="movies__item__storyline">A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cellblock's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.</p>
     <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
 </div>
 
@@ -180,15 +211,6 @@
     <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Action Drama" data-trailer-youtube-id="h1JziA0nNkQ" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//v6xrz4fr92KY1oNC3HsEvrsvR1n.jpg">
-    
-    <h3 class="movies__item__title">Seven Samurai</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Action</span> <span class="badge badge-light">Drama</span></h6>
-    <p class="movies__item__storyline">A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
-</div>
-
 <div class="movies__item movie-tile Comedy Drama Romance" data-trailer-youtube-id="VVN82P8dN7I" data-toggle="modal" data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg">
     
@@ -198,35 +220,23 @@
     <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama" data-trailer-youtube-id="fHAfUSBc0pg" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg">
+<div class="movies__item movie-tile Action Drama" data-trailer-youtube-id="h1JziA0nNkQ" data-toggle="modal" data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//v6xrz4fr92KY1oNC3HsEvrsvR1n.jpg">
     
-    <h3 class="movies__item__title">Whiplash</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span></h6>
-    <p class="movies__item__storyline">Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
-</div>
-
-<div class="movies__item movie-tile Drama Romance" data-trailer-youtube-id="C2-GX0Tltgw" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//pVJAStFPfdLD25DEhv410PZumOM.jpg">
-    
-    <h3 class="movies__item__title">Cinema Paradiso</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Romance</span></h6>
-    <p class="movies__item__storyline">A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
-</div>
-
-<div class="movies__item movie-tile Fantasy Drama Crime" data-trailer-youtube-id="ctRK-4Vt7dA" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//3yJUlOtVa09CYJocwBU8eAryja0.jpg">
-    
-    <h3 class="movies__item__title">The Green Mile</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Fantasy</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
-    <p class="movies__item__storyline">A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cellblock's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.</p>
+    <h3 class="movies__item__title">Seven Samurai</h3>
+    <h6 class="movies__item__button"><span class="badge badge-light">Action</span> <span class="badge badge-light">Drama</span></h6>
+    <p class="movies__item__storyline">A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.</p>
     <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
 </div>
 
         </div>
     </div>
-
+    <footer class="p-4 bg-light">
+        <div class="row p-4">
+            <div class="col text-center p-4">
+                Using <img src="https://www.themoviedb.org/static_cache/v4/logos/408x161-powered-by-rectangle-blue-10d3d41d2a0af9ebcb85f7fb62ffb6671c15ae8ea9bc82a2c6941f223143409e.png" width="77" height="30"> API
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
