@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <title>My Favorite Movies</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src="./index.js"></script>
 </head>
 
@@ -13,28 +14,31 @@
     <!-- Navbar with Genres -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">My Favorite Movies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link All" href="#">All <span class="sr-only">(current)</span></a>
+                <a class="nav-link All" href="#">All <span class="sr-only">
+                (current)</span></a>
             </li>
             
-<li class="nav-item"><a class="nav-link Romance">Romance</a></li> <li class="nav-item"><a class="nav-link Family">Family</a></li> <li class="nav-item"><a class="nav-link ScienceFiction">Science Fiction</a></li> <li class="nav-item"><a class="nav-link Horror">Horror</a></li> <li class="nav-item"><a class="nav-link Crime">Crime</a></li> <li class="nav-item"><a class="nav-link Drama">Drama</a></li> <li class="nav-item"><a class="nav-link Fantasy">Fantasy</a></li> <li class="nav-item"><a class="nav-link Animation">Animation</a></li> <li class="nav-item"><a class="nav-link Adventure">Adventure</a></li> <li class="nav-item"><a class="nav-link Action">Action</a></li> <li class="nav-item"><a class="nav-link Comedy">Comedy</a></li> <li class="nav-item"><a class="nav-link War">War</a></li> <li class="nav-item"><a class="nav-link Thriller">Thriller</a></li> <li class="nav-item"><a class="nav-link History">History</a></li>
+<li class="nav-item"><a class = "nav-link Romance" >Romance</a></li> <li class="nav-item"><a class = "nav-link Family" >Family</a></li> <li class="nav-item"><a class = "nav-link ScienceFiction" >Science Fiction</a></li> <li class="nav-item"><a class = "nav-link Horror" >Horror</a></li> <li class="nav-item"><a class = "nav-link Crime" >Crime</a></li> <li class="nav-item"><a class = "nav-link Drama" >Drama</a></li> <li class="nav-item"><a class = "nav-link Fantasy" >Fantasy</a></li> <li class="nav-item"><a class = "nav-link Animation" >Animation</a></li> <li class="nav-item"><a class = "nav-link Adventure" >Adventure</a></li> <li class="nav-item"><a class = "nav-link Action" >Action</a></li> <li class="nav-item"><a class = "nav-link Comedy" >Comedy</a></li> <li class="nav-item"><a class = "nav-link War" >War</a></li> <li class="nav-item"><a class = "nav-link Thriller" >Thriller</a></li> <li class="nav-item"><a class = "nav-link History" >History</a></li>
 
             </ul>
         </div>
         </nav>
-    
+
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
-          </a>
+          <button type="button" class="hanging-close" aria-label="Close" data-dismiss="modal"
+          aria-hidden="true">  <span aria-hidden="true">&times;</span></button>
           <div class="scale-media" id="trailer-video-container">
           </div>
         </div>
@@ -43,190 +47,270 @@
 
     <!-- Main Page Content -->
     <div class="container">
-    
-        <div class="alert alert-secondary">           
+
+        <div class="alert alert-secondary">
             <span id="showing" class="All">Showing All Movies</span>
         </div>
         <div class="movies">
             
-<div class="movies__item movie-tile Comedy Drama Romance" data-trailer-youtube-id="c25GKl5VNeY" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Comedy Drama Romance"
+data-trailer-youtube-id="c25GKl5VNeY" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//uC6TTUhPpQCmgldGyYveKRAu8JN.jpg">
-    
     <h3 class="movies__item__title">Dilwale Dulhania Le Jayenge</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Comedy</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">Romance</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Comedy</span><span class="badge badge-light">Drama</span><span class="badge badge-light">Romance</span></h6>
     <p class="movies__item__storyline">Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama Crime" data-trailer-youtube-id="K_tLp7T6U1c" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama Crime"
+data-trailer-youtube-id="K_tLp7T6U1c" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg">
-    
     <h3 class="movies__item__title">The Shawshank Redemption</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Crime</span></h6>
     <p class="movies__item__storyline">Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama Crime" data-trailer-youtube-id="fBNpSRtfIUA" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama Crime"
+data-trailer-youtube-id="fBNpSRtfIUA" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg">
-    
     <h3 class="movies__item__title">The Godfather</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Crime</span></h6>
     <p class="movies__item__storyline">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Romance Animation Drama" data-trailer-youtube-id="o4-URMnBOPU" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Romance Animation Drama"
+data-trailer-youtube-id="o4-URMnBOPU" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//xq1Ugd62d23K2knRUx6xxuALTZB.jpg">
-    
     <h3 class="movies__item__title">Your Name.</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Romance</span> <span class="badge badge-light">Animation</span> <span class="badge badge-light">Drama</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Romance</span><span class="badge badge-light">Animation</span><span class="badge badge-light">Drama</span></h6>
     <p class="movies__item__storyline">High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Animation Family Fantasy" data-trailer-youtube-id="ByXuk9QqQkk" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Animation Family Fantasy"
+data-trailer-youtube-id="ByXuk9QqQkk" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//dL11DBPcRhWWnJcFXl9A07MrqTI.jpg">
-    
     <h3 class="movies__item__title">Spirited Away</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Animation</span> <span class="badge badge-light">Family</span> <span class="badge badge-light">Fantasy</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Animation</span><span class="badge badge-light">Family</span><span class="badge badge-light">Fantasy</span></h6>
     <p class="movies__item__storyline">A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Adventure ScienceFiction Fantasy Action" data-trailer-youtube-id="6ZfuNTqbHE8" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg">
-    
-    <h3 class="movies__item__title">Avengers: Infinity War</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Adventure</span> <span class="badge badge-light">Science Fiction</span> <span class="badge badge-light">Fantasy</span> <span class="badge badge-light">Action</span></h6>
-    <p class="movies__item__storyline">As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
-</div>
-
-<div class="movies__item movie-tile Drama ScienceFiction Animation" data-trailer-youtube-id="-d2th2c8NhU" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama ScienceFiction Animation"
+data-trailer-youtube-id="-d2th2c8NhU" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//5JYzfyKBwReaQ41WFhqXgOZnPWV.jpg">
-    
     <h3 class="movies__item__title">Neon Genesis Evangelion: The End of Evangelion</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Science Fiction</span> <span class="badge badge-light">Animation</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Science Fiction</span><span class="badge badge-light">Animation</span></h6>
     <p class="movies__item__storyline">The second of two theatrically released follow-ups to the Neon Genesis Evangelion series. Comprising of two alternate episodes which were first intended to take the place of episodes 25 and 26, this finale answers many of the questions surrounding the series, while also opening up some new possibilities</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama Crime" data-trailer-youtube-id="9O1Iy9od7-A" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Adventure ScienceFiction Fantasy Action"
+data-trailer-youtube-id="6ZfuNTqbHE8" data-toggle="modal"
+data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg">
+    <h3 class="movies__item__title">Avengers: Infinity War</h3>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Adventure</span><span class="badge badge-light">Science Fiction</span><span class="badge badge-light">Fantasy</span><span class="badge badge-light">Action</span></h6>
+    <p class="movies__item__storyline">As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</p>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
+</div>
+
+<div class="movies__item movie-tile Drama Crime"
+data-trailer-youtube-id="9O1Iy9od7-A" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//bVq65huQ8vHDd1a4Z37QtuyEvpA.jpg">
-    
     <h3 class="movies__item__title">The Godfather: Part II</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Crime</span></h6>
     <p class="movies__item__storyline">In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama History War" data-trailer-youtube-id="bJcLRFWxRno" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama History War"
+data-trailer-youtube-id="bJcLRFWxRno" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//yPisjyLweCl1tbgwgtzBCNCBle.jpg">
-    
     <h3 class="movies__item__title">Schindler's List</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">History</span> <span class="badge badge-light">War</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">History</span><span class="badge badge-light">War</span></h6>
     <p class="movies__item__storyline">The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Action Drama History" data-trailer-youtube-id="None" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Action Drama History"
+data-trailer-youtube-id="None" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//5konZnIbcAxZjP616Cz5o9bKEfW.jpg">
-    
     <h3 class="movies__item__title">Harakiri</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Action</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">History</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Action</span><span class="badge badge-light">Drama</span><span class="badge badge-light">History</span></h6>
     <p class="movies__item__storyline">Peace in 17th-century Japan causes the Shogunate's breakup of warrior clans, throwing thousands of samurai out of work and into poverty. An honorable end to such fate under the samurai code is ritual suicide, or hara-kiri.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Fantasy Drama Crime" data-trailer-youtube-id="ctRK-4Vt7dA" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Fantasy Drama Crime"
+data-trailer-youtube-id="ctRK-4Vt7dA" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//3yJUlOtVa09CYJocwBU8eAryja0.jpg">
-    
     <h3 class="movies__item__title">The Green Mile</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Fantasy</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">Crime</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Fantasy</span><span class="badge badge-light">Drama</span><span class="badge badge-light">Crime</span></h6>
     <p class="movies__item__storyline">A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cellblock's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Thriller Crime" data-trailer-youtube-id="s7EdQ4FqbhY" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Thriller Crime"
+data-trailer-youtube-id="s7EdQ4FqbhY" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//dM2w364MScsjFf8pfMbaWUcWrR.jpg">
-    
     <h3 class="movies__item__title">Pulp Fiction</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Thriller</span> <span class="badge badge-light">Crime</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Thriller</span><span class="badge badge-light">Crime</span></h6>
     <p class="movies__item__storyline">A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Comedy Drama" data-trailer-youtube-id="pAYEQP8gx3w" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Comedy Drama"
+data-trailer-youtube-id="pAYEQP8gx3w" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//f7DImXDebOs148U4uPjI61iDvaK.jpg">
-    
     <h3 class="movies__item__title">Life Is Beautiful</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Comedy</span> <span class="badge badge-light">Drama</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Comedy</span><span class="badge badge-light">Drama</span></h6>
     <p class="movies__item__storyline">A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama" data-trailer-youtube-id="BdJKm16Co6M" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama"
+data-trailer-youtube-id="BdJKm16Co6M" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//adw6Lq9FiC9zjYEpOqfq03ituwp.jpg">
-    
     <h3 class="movies__item__title">Fight Club</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span></h6>
     <p class="movies__item__storyline">A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "fight clubs" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Animation Drama War" data-trailer-youtube-id="4vPeTSRd580" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Animation Drama War"
+data-trailer-youtube-id="4vPeTSRd580" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//4u1vptE8aXuzb5zauZTmikyectV.jpg">
-    
     <h3 class="movies__item__title">Grave of the Fireflies</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Animation</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">War</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Animation</span><span class="badge badge-light">Drama</span><span class="badge badge-light">War</span></h6>
     <p class="movies__item__storyline">In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama Horror Thriller" data-trailer-youtube-id="kf8X-MtsufY" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama Horror Thriller"
+data-trailer-youtube-id="kf8X-MtsufY" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//81d8oyEFgj7FlxJqSDXWr8JH8kV.jpg">
-    
     <h3 class="movies__item__title">Psycho</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span> <span class="badge badge-light">Horror</span> <span class="badge badge-light">Thriller</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Horror</span><span class="badge badge-light">Thriller</span></h6>
     <p class="movies__item__storyline">When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother. The place seems quirky, but fine… until Marion decides to take a shower.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama" data-trailer-youtube-id="klM1GSJsblQ" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama"
+data-trailer-youtube-id="klM1GSJsblQ" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//oFwzvRgfxJc0FUr2mwYTi10dk3G.jpg">
-    
     <h3 class="movies__item__title">Sunset Boulevard</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span></h6>
     <p class="movies__item__storyline">A hack screenwriter writes a screenplay for a former silent-film star who has faded into Hollywood obscurity.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Drama" data-trailer-youtube-id="6aJT5fGCRPk" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Drama Crime"
+data-trailer-youtube-id="rW2bWAcsPCk" data-toggle="modal"
+data-target="#trailer">
+    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//hAPeXBdGDGmXRPj4OZZ0poH65Iu.jpg">
+    <h3 class="movies__item__title">GoodFellas</h3>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span><span class="badge badge-light">Crime</span></h6>
+    <p class="movies__item__storyline">The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.</p>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
+</div>
+
+<div class="movies__item movie-tile Drama"
+data-trailer-youtube-id="6aJT5fGCRPk" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//2Sns5oMb356JNdBHgBETjIpRYy9.jpg">
-    
     <h3 class="movies__item__title">One Flew Over the Cuckoo's Nest</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Drama</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Drama</span></h6>
     <p class="movies__item__storyline">While serving time for insanity at a state mental hospital, implacable rabble-rouser, Randle Patrick McMurphy inspires his fellow patients to rebel against the authoritarian rule of head nurse, Mildred Ratched.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
-<div class="movies__item movie-tile Comedy Drama Romance" data-trailer-youtube-id="VVN82P8dN7I" data-toggle="modal" data-target="#trailer">
+<div class="movies__item movie-tile Comedy Drama Romance"
+data-trailer-youtube-id="VVN82P8dN7I" data-toggle="modal"
+data-target="#trailer">
     <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg">
-    
     <h3 class="movies__item__title">Forrest Gump</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Comedy</span> <span class="badge badge-light">Drama</span> <span class="badge badge-light">Romance</span></h6>
+    <h6 class="movies__item__button">
+    <span class="badge badge-light">Comedy</span><span class="badge badge-light">Drama</span><span class="badge badge-light">Romance</span></h6>
     <p class="movies__item__storyline">A man with a low IQ has accomplished great things in his life and been present during significant historic events - in each case, far exceeding what anyone imagined he could do. Yet, despite all the things he has attained, his one true love eludes him. 'Forrest Gump' is the story of a man who rose above his challenges, and who proved that determination, courage, and love are more important than ability.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
-</div>
-
-<div class="movies__item movie-tile Action Drama" data-trailer-youtube-id="h1JziA0nNkQ" data-toggle="modal" data-target="#trailer">
-    <img class="movies__item__poster" src="https://image.tmdb.org/t/p/w500//v6xrz4fr92KY1oNC3HsEvrsvR1n.jpg">
-    
-    <h3 class="movies__item__title">Seven Samurai</h3>
-    <h6 class="movies__item__button"><span class="badge badge-light">Action</span> <span class="badge badge-light">Drama</span></h6>
-    <p class="movies__item__storyline">A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.</p>
-    <a class="btn btn-outline-primary movies__item__button movie-tile" href="#">Show&nbsp;Trailer</a>
+    <a class="btn btn-outline-primary movies__item__button movie-tile"
+    href="#">
+    Show&nbsp;Trailer</a>
 </div>
 
         </div>
@@ -234,7 +318,7 @@
     <footer class="p-4 bg-light">
         <div class="row p-4">
             <div class="col text-center p-4">
-                Using <img src="https://www.themoviedb.org/static_cache/v4/logos/408x161-powered-by-rectangle-blue-10d3d41d2a0af9ebcb85f7fb62ffb6671c15ae8ea9bc82a2c6941f223143409e.png" width="77" height="30"> API
+                Using <img src="powered.png" width="77" height="30"> API
             </div>
         </div>
     </footer>
